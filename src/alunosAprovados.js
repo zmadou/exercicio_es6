@@ -35,12 +35,6 @@ const alunos = [{
     nota: 7
 }]
 
-const alunosAprovados = []
-
-for (let i = 0; i < alunos.length; i++) {
-    if (alunos[i].nota >= 6) {
-        alunosAprovados.push(alunos[i])
-    }
-}
+const alunosAprovados = alunos.filter(aluno => aluno.nota >= 6)
 
 console.log(alunosAprovados)
